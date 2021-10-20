@@ -1,4 +1,4 @@
 var a = []
-function urName {
+function urName() {
   window.alert(a)
 }
