@@ -1,9 +1,12 @@
-var a = []
-function addName() {
-  var b = document.getElementById('name').value
-  a.unshift(b)
-  document.getElementById('name').value='';
-  window.alert(a)
+var a;
+
+function getName() {
+    //get value from input field and save as "a"
+    a = document.getElementById('username').value;
+    //create local storage key with value of "a"
+    localStorage.setItem('uName',a);
+    //automatically take user to page two.html
+    location.href = "two.html";
 }
 
 function urName() {
