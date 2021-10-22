@@ -9,7 +9,7 @@ function getName() {
     location.href = "two.html";
 }
 
-function urName() {
-  window.alert(a)
-  }
+function getUser() {
+    var b = localStorage.getItem('uName');
+    document.getElementById('placeholder').innerHTML = "Hello " + b;
 }
