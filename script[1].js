@@ -1,15 +1,9 @@
-var a;
-
-function getName() {
-    //get value from input field and save as "a"
-    a = document.getElementById('username').value;
-    //create local storage key with value of "a"
-    localStorage.setItem('uName',a);
-    //automatically take user to page two.html
-    location.href = "two.html";
-}
-
-function getUser() {
-    var b = localStorage.getItem('uName');
-    document.getElementById('placeholder').innerHTML = "Hello " + b;
+//create function saveName
+function saveName () {
+  //save input as fieldValue
+  var fieldValue = document.getElementById('textfield').value;
+  //store the input
+  localStorage.setItem('username',fieldValue);
+  //move person to different page
+  window.location.href = "page2.html";
 }
